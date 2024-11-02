@@ -38,7 +38,7 @@ output_folder = "C:/Users/16673/Downloads/python_output"
 result = parse_json_files(input_folder, output_folder)
 
 output = """
-List<object> t = ["""
+public static List<Location> List = ["""
 
 for location in result:
     image = location[0]
@@ -46,10 +46,7 @@ for location in result:
     longitude = location[2]
 
     output += f"""
-    new {{
-        Location = new GeoLocation({latitude}, {longitude}),
-        Image = "{image}"
-    }},"""
+    new Location(new GeoLocation({latitude}, {longitude}), "{image}"),"""
 
 output += "\n];"
 print(output)
