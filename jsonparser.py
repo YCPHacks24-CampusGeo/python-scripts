@@ -38,7 +38,7 @@ output_folder = "C:/Users/16673/Downloads/python_output"
 result = parse_json_files(input_folder, output_folder)
 
 output = """
-public static List<Location> List = ["""
+public static List<Location> Locations = ["""
 
 for location in result:
     image = location[0]
