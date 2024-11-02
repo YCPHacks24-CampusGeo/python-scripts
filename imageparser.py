@@ -50,6 +50,8 @@ def resize_images(size=(128, 128)):
             # Paste the overlay image below the circular image
             combined_img.paste(overlay_image, mask=overlay_image)
 
+            combined_img.thumbnail((65, 999999), Image.ANTIALIAS)
+
             output_path = os.path.join(output_folder + "/markers", filename.replace(".jpg", ".png"))
             combined_img.save(output_path, format="PNG")
 
