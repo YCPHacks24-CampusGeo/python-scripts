@@ -34,7 +34,7 @@ def parse_json_files(input_folder, output_folder):
 
 # Example usage
 input_folder = "C:/Users/16673/Downloads/uploaded_locations"
-output_folder = "C:/Users/16673/Downloads/python_output"
+output_folder = "C:/Users/16673/Downloads/location_output"
 result = parse_json_files(input_folder, output_folder)
 
 output = """
